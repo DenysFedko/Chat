@@ -1,0 +1,55 @@
+
+.message-box {
+  margin: 0 auto;
+  padding: 10px 25px;
+  width: 100%;
+}
+
+.message {
+  display: table-cell;
+  float: left;
+
+  padding: 15px;
+  padding-top: 18px;
+  margin-left: 10px;
+
+  max-width: 540px;
+  min-height: 60px;
+
+  text-align: left;
+  vertical-align: middle;
+  font-size: 16px;
+  color: $color-black;
+  border: 1px solid $color-white;
+  background: $color-background1;
+  border-radius: 10px;
+}
+
+.my-message {
+  .message {
+    float: right;
+
+    margin: 0;
+    margin-right: 10px;
+
+    background: $color-bgr-my-msg;
+    color: $color-white;
+  }
+  .avatar {
+    display: block;
+    float: right;
+  }
+}
+
+
+.input-message {
+  position: absolute;
+  bottom: 0;
+
+  height: 80px;
+  max-width: 746px;
+  width: 100%;
+
+  background: $color-white;
+  border-top: 1px solid $color-border;
+}

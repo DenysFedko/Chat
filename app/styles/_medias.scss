@@ -1,0 +1,95 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 718px;
+  }
+  .chat-container, .input-message { max-width: 484px; }
+
+  .message-box > .message {
+    font-size: 16px;
+    min-height: 50px;
+    max-width: 302px;
+  }
+  .message-box > img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+
+  .msg-field {width: 380px;}
+  .msg-send {	width: 50px;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .sidebar, .text-header { display: none; }
+
+  .opened {
+    display: block;
+    position: absolute;
+    z-index:1111;
+  }
+
+  .container, .chat-container { max-width: 440px; }
+
+  .message-box > .message {
+    font-size: 16px;
+    min-height: 50px;
+    max-width: 257px;
+  }
+
+  .message-box > img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+
+  .input-message {max-width: 440px;}
+  .msg-field {width: 335px;}
+  .msg-send {	width: 50px;}
+
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar, .text-header, .chat-name { display: none; }
+  .opened {
+    display: block;
+    position: absolute;
+    z-index:1111;
+  }
+
+  body {
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .chat {
+    min-width: 300px;
+    height: 100%;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .chat-container { width: 100%; }
+
+  .message-box > .message {
+    padding: 12px;
+    font-size: 14px;
+    min-height: 14px;
+    max-width: 79%;
+  }
+
+  .message-box > img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .input-message {width: 100%;}
+  .msg-field {width: 75%;}
+  .msg-send {	width: 15%;}
+}

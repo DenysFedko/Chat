@@ -1,0 +1,20 @@
+.header {
+  display: block;
+  margin-top: 50px;
+
+  text-align: center;
+  color: $color-white;
+
+  h1 {
+    margin: 10px;
+
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .text-header {
+    font-size: 18px;
+    font-variant-caps: petite-caps;
+    font-style: italic;
+  }
+}

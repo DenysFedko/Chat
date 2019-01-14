@@ -1,0 +1,71 @@
+.sidebar {
+  overflow-y: auto;
+  display: inline-block;
+  vertical-align: top;
+
+  height: 100%;
+  max-width: 244px;
+
+  background: $color-background1;
+  border-right: 1px solid $color-border;
+  .search-container {
+    z-index: 211;
+    position: absolute;
+
+    padding: 16px;
+
+    background: $color-background1;
+  }
+  .search {
+    display: inline-block;
+
+    padding-left: 30px;
+    width: 100%;
+    height: 30px;
+
+    border-radius: 5px;
+    border: 1px solid $color-border;
+    background: $color-white url("../images/zoomglass.svg") no-repeat -35px 7px;
+    background-size: 50% 50%;
+  }
+  .persons {
+    height: 100%;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+}
+
+.person {
+  display: table;
+
+  padding: 5px;
+  margin: 10px 0;
+  width: 100%;
+  height: 70px;
+
+  border-radius: 10px;
+
+  > .name {
+    display: table-cell;
+    vertical-align: middle;
+
+    width: 140px;
+    padding: 10px;
+
+    font-size: 16px;
+    text-align: center;
+    transition-property: background, color;
+    color: $color-black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transition-duration: .25s;
+    background: $color-focus-form;
+  }
+  &:hover p {
+    transition-duration: 0.25s;
+    color: $color-white;
+  }
+}
