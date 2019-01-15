@@ -19,4 +19,4 @@ Online Chat
 ```
 
 # Published
-[a link](https://denysfedko.github.io/Chat/)
+[Chat](https://denysfedko.github.io/Chat/)
