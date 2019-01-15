@@ -1,7 +1,11 @@
 # Chat
 Online Chat
 
+
+
 ## Get started
+
+
 
 **git**
 ```bash
@@ -11,5 +15,8 @@ Online Chat
 **npm**
 ```bash
 	npm install
-	npm build
+	gulp build
 ```
+
+# Published
+[a link](https://denysfedko.github.io/Chat/)
