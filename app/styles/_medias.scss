@@ -2,6 +2,7 @@
   .container {
     max-width: 718px;
   }
+
   .chat-container, .input-message { max-width: 484px; }
 
   .message-box > .message {
@@ -27,6 +28,7 @@
     position: absolute;
     z-index:1111;
   }
+
 
   .container, .chat-container { max-width: 440px; }
 

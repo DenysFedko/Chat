@@ -1,12 +1,14 @@
 $(document).ready(function() {
 
 	$('.sign-in .button').click(function(){
-		$('.sign-in').hide();
+		$('.sign-in').hide(500);
 	});
 
-	$('.chat-container').click(function(){
+
+	$('.main').click(function(){
 		$('.sidebar').toggleClass('opened');
 	});
+
 
 	$('.msg-send').click(function () {
 		if($('.msg-field').val() != '') {
@@ -23,9 +25,22 @@ $(document).ready(function() {
 					"<p class=\"message\">" + textAnswer() + "</p></div>");
 			}, 700); // время в мс
 
-		
-
 		} else alert("Empty message");
+	});
+
+
+
+	$('.search').on('input', function() {
+		// Поиск чатов
+		var $this = $(this),
+			RegExpValue = RegExp($this.val(), 'i');
+
+		$('.person').show().filter(function() {
+			var $this = $(this);
+
+			if (!RegExpValue.test($this.children('.name').text()))
+				return true;
+		}).hide();
 	});
 	
 	function textAnswer() {

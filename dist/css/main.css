@@ -183,6 +183,7 @@ body {
             background-size: 50% 50%; }
   .sidebar .persons {
     height: 100%;
+    width: 230px;
     margin-top: 50px;
     padding: 10px; }
 
@@ -329,8 +330,13 @@ body {
   position: fixed;
   top: 0px; }
   .sign-in .content {
-    margin: 300px auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -224px;
     width: 320px;
+    height: 224px;
     padding: 10px;
     background-color: #fff;
     -webkit-border-radius: 5px;

@@ -8,8 +8,13 @@
 	top: 0px;
 
 	.content {
-		margin: 300px auto;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		margin-left: -160px;
+		margin-top: -224px;
 		width: 320px;
+		height: 224px;
 		padding: 10px;
 		background-color: $color-white;
 		border-radius: 5px;
